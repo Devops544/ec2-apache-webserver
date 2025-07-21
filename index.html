@@ -1,0 +1,27 @@
+mkdir apache-on-ec2
+cd apache-on-ec2
+
+# Create index.html
+cat <<EOF > index.html
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Apache EC2 Demo</title>
+</head>
+<body>
+    <h1>Welcome to Apache Server on AWS EC2!</h1>
+    <p>This page is hosted using Apache HTTP Server on an EC2 instance.</p>
+</body>
+</html>
+EOF
+
+# Create README.md
+cat <<EOF > README.md
+# Apache on EC2 Demo
+
+This project hosts a static HTML page using Apache HTTP Server on an Amazon EC2 instance.
+
+## Files:
+- index.html: Home page to be served by Apache
+- Instructions to deploy are in this file
+EOF
